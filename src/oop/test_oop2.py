@@ -1,10 +1,10 @@
 import unittest
-from oop2 import *
+from oop2 import GroundVehicle, Motorcycle
 
 class Oop2Tests(unittest.TestCase):
   def setUp(self):
-    self.ground_vehicle = GroundVehicle()
-    self.motorcycle = Motorcycle()
+    self.ground_vehicle = GroundVehicle(GroundVehicle)
+    self.motorcycle = Motorcycle(Motorcycle)
 
   def test_motorcycle_inheritance(self):
     self.assertTrue(isinstance(self.motorcycle, GroundVehicle))
